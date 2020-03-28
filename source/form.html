@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
+        alt="Логотип интернет-магазина «Мишка»">
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">Открыть меню</button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list site-list">
+            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="#">Вязание на заказ</a></li>
+            <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
+            <li class="site-list__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Страница заказа</h1>
+    <section class="content content--inner-page">
+      <h2 class="content__title">Вязание на заказ</h2>
+    </section>
+
+    <section class="order">
+      <div class="order__wrapper">
+        <h2 class="visually-hidden">Фoрма заказа</h2>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания!
+          Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+        <form class="order__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="order__fieldset fieldset-type">
+            <legend>Тип</legend>
+            <ul class="fieldset-type__list">
+              <li class="fieldset-type__item">
+                <input class="visually-hidden fieldset-type__radio" type="radio" name="type" value="accessory"
+                  id="filter-have" checked>
+                <label class="fieldset-type__label" for="filter-have">Аксессуар для интерьера</label>
+              </li>
+              <li class="fieldset-type__item">
+                <input class="visually-hidden fieldset-type__radio" type="radio" name="type" value="toy"
+                  id="filter-no-have">
+                <label class="fieldset-type__label" for="filter-no-have">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order__fieldset fieldset-color">
+            <legend>Цвет</legend>
+            <ul class="fieldset-color__list">
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-white"
+                  checked>
+                <label class="fieldset-color__label" for="filter-white">Белый</label>
+              </li>
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-grey"
+                  checked>
+                <label class="fieldset-color__label" for="filter-grey">Серый</label>
+              </li>
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-tiffany">
+                <label class="fieldset-color__label" for="filter-tiffany">«Тиффани»</label>
+              </li>
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-black">
+                <label class="fieldset-color__label" for="filter-black">Черный</label>
+              </li>
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-pink">
+                <label class="fieldset-color__label" for="filter-pink">Розовый</label>
+              </li>
+              <li class="fieldset-color__item">
+                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-orange">
+                <label class="fieldset-color__label" for="filter-orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order__fieldset fieldset-name">
+            <legend>ФИО</legend>
+            <ul class="fieldset-name__list">
+              <li class="fieldset-name__item">
+                <label for="name">Имя:</label>
+                <input class="fieldset-name__input" type="text" name="your-name" id="name"
+                  placeholder="Введите Ваше имя">
+              </li>
+              <li class="fieldset-name__item">
+                <label for="surname">Фамилия:</label>
+                <input class="fieldset-name__input" type="text" name="your-surname" id="surname"
+                  placeholder="Укажите фамилию">
+              </li>
+              <li class="fieldset-name__item">
+                <label for="patronymic">Отчество:</label>
+                <input class="fieldset-name__input" type="text" name="your-patronymic" id="patronymic"
+                  placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="order__fieldset fieldset-phone">
+            <label class="fieldset-phone__label fieldset-phone__label--tel" for="phone">Тел</label>
+            <input class="fieldset-phone__input fieldset-phone__input--icon" type="tel" required="" name="your-phone"
+              id="phone" pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="+7 XXX XX XX*">
+          </fieldset>
+
+          <fieldset class="order__fieldset fieldset-email">
+            <label class="fieldset-email__label fieldset-email__label--email" for="email-fild">E-mail</label>
+            <input class="fieldset-email__input fieldset-email__input--icon" type="email" required="" name="your-email"
+              id="email-fild" placeholder="Ваш Email*">
+          </fieldset>
+
+          <fieldset class="order__fieldset fieldset-message">
+            <label class="fieldset-message__label" for="message">доп</label>
+            <textarea class="fieldset-message__textarea" name="your-message" id="message"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <button class="order__button button" type="submit">Отправить заказ</button>
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
