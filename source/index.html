@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
+    <a class="logo">
+      <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35"
         alt="Логотип интернет-магазина «Мишка»">
       <nav class="navigation">
         <button class="navigation__toggle" type="button">Открыть меню</button>
@@ -73,35 +73,45 @@
     <section class="comments">
       <div class="comments__wrapper slider">
         <h2 class="comments__title">Отзывы</h2>
-        <div class="comments__list slider__list">
-          <blockquote class="comments__item slider__item">
-            <p class="comments__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-            </p>
-            <cite class="comments__author-name">Анастасия Красильникова</cite>
-            <cite class="comments__author-contact">@misssssiskras</cite>
-          </blockquote>
-          <blockquote class="comments__item slider__item">
-            <p class="comments__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-            </p>
-            <cite class="comments__author-name">Анастасия Красильникова</cite>
-            <cite class="comments__author-contact">@misssssiskras</cite>
-          </blockquote>
-          <blockquote class="comments__item slider__item">
-            <p class="comments__text">
-              Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
-              инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
-              стильными, а также набирают больше лайков!
-            </p>
-            <cite class="comments__author-name">Анастасия Красильникова</cite>
-            <cite class="comments__author-contact">@misssssiskras</cite>
-          </blockquote>
-        </div>
+
+        <ul class="comments__list slider__list">
+          <li class="comments__item slider__item">
+            <blockquote>
+              <p class="comments__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!
+              </p>
+              <cite class="comments__author-name">Анастасия Красильникова</cite>
+              <cite class="comments__author-contact">@misssssiskras</cite>
+            </blockquote>
+          </li>
+
+          <li class="comments__item slider__item">
+            <blockquote>
+              <p class="comments__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!
+              </p>
+              <cite class="comments__author-name">Анастасия Красильникова</cite>
+              <cite class="comments__author-contact">@misssssiskras</cite>
+            </blockquote>
+          </li>
+
+          <li class="comments__item slider__item">
+            <blockquote>
+              <p class="comments__text">
+                Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных
+                инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!
+              </p>
+              <cite class="comments__author-name">Анастасия Красильникова</cite>
+              <cite class="comments__author-contact">@misssssiskras</cite>
+            </blockquote>
+          </li>
+        </ul>
+
         <div class="comments__buttons slider__buttons">
           <button class="slider__button" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
@@ -136,20 +146,18 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+            Инстаграме</a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
@@ -157,21 +165,21 @@
     </div>
   </footer>
 
-  <section class="popap">
-    <div class="popap__wraper">
-      <h2 class="popap__title">Добавить в корзину</h2>
-      <form class="popap__form" action="https://echo.htmlacademy.ru" method="GET">
-        <input class="visually-hidden popap__input" type="checkbox" name="small" id="small-field" value="small-size"
+  <section class="popup">
+    <div class="popup__wraper">
+      <h2 class="popup__title">Добавить в корзину</h2>
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="GET">
+        <input class="visually-hidden popup__input" type="checkbox" name="small" id="small-field" value="small-size"
           checked>
-        <label class="popap__label" for="small-field">s</label>
+        <label class="popup__label" for="small-field">s</label>
 
-        <input class="visually-hidden popap__input" type="checkbox" name="medium" id="medium-field" value="medium-size">
-        <label class="popap__label" for="medium-field">m</label>
+        <input class="visually-hidden popup__input" type="checkbox" name="medium" id="medium-field" value="medium-size">
+        <label class="popup__label" for="medium-field">m</label>
 
-        <input class="visually-hidden popap__input" type="checkbox" name="large" id="large-field" value="large-size">
-        <label class="popap__label" for="large-field">l</label>
+        <input class="visually-hidden popup__input" type="checkbox" name="large" id="large-field" value="large-size">
+        <label class="popup__label" for="large-field">l</label>
 
-        <button class="popap__button button" type="submit">Добавить</button>
+        <button class="popup__button button" type="submit">Добавить</button>
       </form>
     </div>
   </section>

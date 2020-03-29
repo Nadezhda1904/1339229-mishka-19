@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/86x35" width="86" height="35"
+    <a class="logo" href="index.html">
+      <img class="logo__image" src="https://via.placeholder.com/86x35" width="86" height="35"
         alt="Логотип интернет-магазина «Мишка»">
       <nav class="navigation">
         <button class="navigation__toggle" type="button">Открыть меню</button>
@@ -41,13 +41,12 @@
             <legend>Тип</legend>
             <ul class="fieldset-type__list">
               <li class="fieldset-type__item">
-                <input class="visually-hidden fieldset-type__radio" type="radio" name="type" value="accessory"
-                  id="filter-have" checked>
+                <input class="visually-hidden radio" type="radio" name="type" value="accessory" id="filter-have"
+                  checked>
                 <label class="fieldset-type__label" for="filter-have">Аксессуар для интерьера</label>
               </li>
               <li class="fieldset-type__item">
-                <input class="visually-hidden fieldset-type__radio" type="radio" name="type" value="toy"
-                  id="filter-no-have">
+                <input class="visually-hidden radio" type="radio" name="type" value="toy" id="filter-no-have">
                 <label class="fieldset-type__label" for="filter-no-have">Детская игрушка</label>
               </li>
             </ul>
@@ -57,29 +56,27 @@
             <legend>Цвет</legend>
             <ul class="fieldset-color__list">
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-white"
-                  checked>
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-white" checked>
                 <label class="fieldset-color__label" for="filter-white">Белый</label>
               </li>
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-grey"
-                  checked>
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-grey" checked>
                 <label class="fieldset-color__label" for="filter-grey">Серый</label>
               </li>
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-tiffany">
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-tiffany">
                 <label class="fieldset-color__label" for="filter-tiffany">«Тиффани»</label>
               </li>
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-black">
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-black">
                 <label class="fieldset-color__label" for="filter-black">Черный</label>
               </li>
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-pink">
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-pink">
                 <label class="fieldset-color__label" for="filter-pink">Розовый</label>
               </li>
               <li class="fieldset-color__item">
-                <input class="visually-hidden fieldset-color-checkbox" type="checkbox" name="black" id="filter-orange">
+                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-orange">
                 <label class="fieldset-color__label" for="filter-orange">Оранжевый</label>
               </li>
             </ul>
@@ -90,37 +87,38 @@
             <ul class="fieldset-name__list">
               <li class="fieldset-name__item">
                 <label for="name">Имя:</label>
-                <input class="fieldset-name__input" type="text" name="your-name" id="name"
-                  placeholder="Введите Ваше имя">
+                <input class="input-text" type="text" name="your-name" id="name" placeholder="Введите Ваше имя">
               </li>
               <li class="fieldset-name__item">
                 <label for="surname">Фамилия:</label>
-                <input class="fieldset-name__input" type="text" name="your-surname" id="surname"
-                  placeholder="Укажите фамилию">
+                <input class="input-text" type="text" name="your-surname" id="surname" placeholder="Укажите фамилию">
               </li>
               <li class="fieldset-name__item">
                 <label for="patronymic">Отчество:</label>
-                <input class="fieldset-name__input" type="text" name="your-patronymic" id="patronymic"
+                <input class="input-text" type="text" name="your-patronymic" id="patronymic"
                   placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="order__fieldset fieldset-phone">
+            <legend>Тел</legend>
             <label class="fieldset-phone__label fieldset-phone__label--tel" for="phone">Тел</label>
-            <input class="fieldset-phone__input fieldset-phone__input--icon" type="tel" required="" name="your-phone"
-              id="phone" pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="+7 XXX XX XX*">
+            <input class="input-text input-text--icon" type="tel" required="" name="your-phone" id="phone"
+              pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="+7 XXX XX XX*">
           </fieldset>
 
           <fieldset class="order__fieldset fieldset-email">
+            <legend>E-mail</legend>
             <label class="fieldset-email__label fieldset-email__label--email" for="email-fild">E-mail</label>
-            <input class="fieldset-email__input fieldset-email__input--icon" type="email" required="" name="your-email"
-              id="email-fild" placeholder="Ваш Email*">
+            <input class="input-text input-text--icon" type="email" required="" name="your-email" id="email-fild"
+              placeholder="Ваш Email*">
           </fieldset>
 
           <fieldset class="order__fieldset fieldset-message">
+            <legend>доп</legend>
             <label class="fieldset-message__label" for="message">доп</label>
-            <textarea class="fieldset-message__textarea" name="your-message" id="message"
+            <textarea class="input-textarea" name="your-message" id="message"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <button class="order__button button" type="submit">Отправить заказ</button>
