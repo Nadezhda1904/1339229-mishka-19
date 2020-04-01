@@ -1,4 +1,4 @@
-.radio+.fieldset__label::before {
+.radio + .fieldset__label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -9,13 +9,13 @@
   width: 40px;
   height: 40px;
 
-  border: 2px solid #444;
+  border: 2px solid @font-color-base;
   border-radius: 50%;
   background-clip: content-box;
   padding: 10px;
 }
 
-.radio:checked+.fieldset__label::after {
+.radio:checked + .fieldset__label::after {
   content: "";
   position: absolute;
   top: 11px;
@@ -26,6 +26,6 @@
   width: 16px;
   height: 16px;
 
-  background-color: #63d1bb;
+  background-color: @green-primary;
   border-radius: 50%;
 }
