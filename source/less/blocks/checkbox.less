@@ -1,0 +1,30 @@
+.checkbox + .fieldset__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+
+  width: 40px;
+  height: 40px;
+
+  border: 2px solid #444444;
+
+  background-clip: content-box;
+  padding: 10px;
+}
+
+.checkbox:checked + .fieldset__label::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 30%;
+  box-sizing: border-box;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 17px;
+}

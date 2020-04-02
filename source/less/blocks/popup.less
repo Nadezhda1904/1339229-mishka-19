@@ -1,0 +1,67 @@
+.popup {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 33px 30px 20px;
+  min-height: 336px;
+}
+
+.popup__title {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0;
+
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.popup__paragraph {
+  margin: 12px 0 23px;
+  padding: 0;
+
+  line-height: 30px;
+  color: @black;
+  text-align: center;
+  font-style: normal;
+}
+
+.popup__wrapper {
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+
+  border: 0;
+}
+
+.popup__label {
+  box-sizing: border-box;
+  margin-right: 7px;
+  padding: 15px 0;
+  width: 82px;
+  height: 52px;
+  min-height: 33px;
+
+  text-align: center;
+
+  border: 2px solid @bg-color-separate;
+}
+
+.popup__label:last-child {
+  margin-right: 0;
+}
+
+.popup__input:checked + .popup__label {
+  border: 2px solid @green-primary;
+}
+
+.popup__button {
+  background-color: transparent;
+}
