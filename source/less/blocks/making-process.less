@@ -6,8 +6,6 @@
 }
 
 .making-process__wrapper {
-  box-sizing: border-box;
-
   width: 260px;
 
   border: 1px solid @bg-color-separate;
@@ -18,12 +16,28 @@
 }
 
 .making-process__title {
+  position: relative;
   margin: 0;
   padding: 30px 42px 30px 92px;
 
   font-size: 17px;
   font-weight: 700;
   color: @font-color-heading;
+
+  &::before {
+    content: "";
+    top: 50%;
+    left: 33px;
+
+    transform: translateY(-50%);
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../../img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 22px;
+  }
 }
 
 .making-process__discription {
@@ -43,4 +57,25 @@
   width: 192px;
 
   line-height: 20px;
+}
+
+.making-process__content {
+  position: relative;
+}
+
+.making-process__play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 101px;
+  height: 77px;
+
+  border: 0;
+  background-image: url("../../img/icon-play.svg");
+  background-color: transparent;
+
+  cursor: pointer;
 }

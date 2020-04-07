@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 .body {
   margin: 0;
   padding: 0;
@@ -11,4 +21,15 @@
   color: @font-color-base;
 
   background-color: @bg-color-body;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
