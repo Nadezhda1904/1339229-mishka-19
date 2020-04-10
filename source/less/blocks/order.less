@@ -1,5 +1,13 @@
-.order {
-  width: 260px;
+.order__fieldset-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .order__text {
@@ -7,6 +15,23 @@
   padding-bottom: 30px;
 
   font-size: 13px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 167px;
+
+    font-size: 17px;
+  }
+}
+
+.order__wrapper-buttom {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .order__button {
@@ -15,6 +40,14 @@
   background-color: transparent;
 
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+  }
 }
 
 .order__required {
@@ -25,4 +58,14 @@
   font-weight: 400;
   line-height: 16px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
 }

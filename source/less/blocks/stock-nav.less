@@ -1,4 +1,4 @@
-.stock-navigation {
+.stock-nav {
   display: none;
 
   font-size: 17px;
@@ -6,20 +6,21 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-  }
-
-  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
     order: 4;
     padding-top: 22px;
     z-index: 1;
+
+    width: 334px;
+
+    font-size: 15px;
 
     border: none;
   }
 }
 
-.stock-navigation__link {
-  /*padding-left: 76px;*/
-
+.stock-nav__link {
   text-decoration: none;
   color: @black;
 }
