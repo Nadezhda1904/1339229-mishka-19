@@ -4,10 +4,24 @@
 }
 
 .products__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 260px;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 669px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1050px;
+  }
 }
 
 .products__item {

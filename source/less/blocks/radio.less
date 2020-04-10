@@ -3,16 +3,24 @@
   position: absolute;
   left: 0;
   top: 50%;
-  margin-top: -20px;
 
+  transform: translate(-50%, -50%);
 
   width: 40px;
   height: 40px;
 
   border: 2px solid @font-color-base;
   border-radius: 50%;
-  background-clip: content-box;
-  padding: 10px;
+
+  @media (min-width: @tablet-width) {
+    left: 30px;
+    width: 54px;
+    height: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 30px;
+  }
 }
 
 .radio:checked + .fieldset__label::after {
@@ -28,4 +36,14 @@
 
   background-color: @green-primary;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    left: 6%;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 3%;
+  }
 }

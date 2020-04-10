@@ -1,5 +1,32 @@
 .product-week {
-  padding: 35px 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 0;
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
+}
+
+.product-week__wrapper-head {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    width: 100%;
+  }
 }
 
 .product-week__header {
@@ -10,6 +37,23 @@
   line-height: 20px;
   color: @font-color-legend;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-left: auto;
+    padding-right: 26px;
+    width: 100px;
+
+    line-height: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-left: 47px;
+    padding-top: 10px;
+    order: 1;
+  }
 }
 
 .product-week__title {
@@ -20,12 +64,44 @@
   font-weight: 700;
   line-height: 30px;
   color: @font-color-section-title;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+    z-index: 1;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.product-week__wrapper {
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 292px;
+    min-height: 404px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 175px;
+    width: 292px;
+    min-height: 461px;
+  }
 }
 
 .product-week__description {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px 30px 0;
+  }
 }
 
 .product-week__table {
@@ -41,4 +117,24 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: @desktop-width) {
+    padding-top: 100px;
+  }
+}
+
+.product-week__image {
+  @media (min-width: @tablet-width) {
+    margin-left: 43px;
+    height: 404px;
+    width: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: auto;
+    height: 636px;
+  }
 }

@@ -1,6 +1,5 @@
 .fieldset {
   position: relative;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding-top: 30px;
@@ -14,20 +13,24 @@
     padding-top: 0;
     min-height: 105px;
   }
-}
 
-.fieldset__item {
-  margin-bottom: 25px;
-}
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 62px;
+    right: 0;
+    height: 1px;
+    background-color: #62d1ba;
 
-.fieldset::before {
-  position: absolute;
-  content: "";
-  top: 6px;
-  left: 62px;
-  right: 0;
-  height: 1px;
-  background-color: #62d1ba;
+    @media (min-width: @tablet-width) {
+      height: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 0;
+    }
+  }
 }
 
 .fieldset__list {
@@ -35,12 +38,49 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 167px;
+
+    &--tablet {
+      display: flex;
+      /*justify-content: space-between;*/
+      flex-wrap: wrap;
+      margin-left: 167px;
+      min-height: 304px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--tablet {
+      min-height: 228px;
+    }
+  }
+}
+
+.fieldset__item {
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    /*margin-bottom: 35px;*/
+    min-width: 220px;
+
+    &--tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 240px;
+  }
 }
 
 .fieldset__label {
   position: relative;
   display: block;
   padding: 10px 0 10px 65px;
+  min-height: 40px;
 
   font-size: 13px;
   font-weight: 700;
@@ -50,5 +90,25 @@
 
   &--text {
     padding: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    min-height: 54px;
+
+    font-size: 19px;
+
+    &--text {
+      padding: 15px 5px 5px 0;
+    }
+  }
+}
+
+.fieldset__color {
+  @media (min-width: @tablet-width) {
+    background-color: @gray-secondary;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @gray-secondary;
   }
 }

@@ -1,8 +1,24 @@
+.slider {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .slider__buttons {
   display: flex;
+
   margin-bottom: 38px;
 
   border-left: 1px solid @bg-color-separate;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 320px;
+    right: 50px;
+
+    border: none;
+  }
 }
 
 .slider__button {
@@ -33,10 +49,15 @@
   }
 
   &--prev::after {
-    background-image: url("../../img/icon-left-arrow.svg");
+    background-image: url("../img/icon-left-arrow.svg");
   }
 
   &--next::after {
-    background-image: url("../../img/icon-right-arrow.svg");
+    background-image: url("../img/icon-right-arrow.svg");
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 90px;
+    border: none;
   }
 }

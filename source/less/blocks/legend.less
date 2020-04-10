@@ -4,4 +4,16 @@
   font-weight: 700;
   color: @font-color-legend;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 50px 60px;
+  }
 }

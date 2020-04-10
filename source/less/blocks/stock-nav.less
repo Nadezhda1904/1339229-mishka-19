@@ -1,0 +1,26 @@
+.stock-nav {
+  display: none;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 4;
+    padding-top: 22px;
+    z-index: 1;
+
+    width: 334px;
+
+    font-size: 15px;
+
+    border: none;
+  }
+}
+
+.stock-nav__link {
+  text-decoration: none;
+  color: @black;
+}

@@ -12,20 +12,58 @@
     <nav class="navigation">
       <div class="navigation__wrapper-top">
         <a class="navigation__logo logo" href="index.html">
-          <img class="logo__image" src="img/logo-mobile.svg" width="86" height="35"
-            alt="Логотип интернет-магазина «Мишка»"></a>
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header-logo__image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Мишка»">
+          </picture>
+        </a>
         <button class="navigation__toggle navigation__toggle--of" type="button" aria-label="Открыть меню"></button>
       </div>
-      <div class="navigation__wrapper-bottom">
-        <ul class="navigation__list site-list">
-          <li class="site-list__item"><a class="site-list__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a class="site-list__link" href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item site-list__item--search"><a class="site-list__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item site-list__item--cart"><a class="site-list__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="navigation__list site-nav">
+        <li class="site-nav__item site-nav__item--catalog">
+          <a class="navigation__link  navigation__link--tablet site-nav__link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-nav__item site-nav__item--order">
+          <a class="navigation__link navigation__link--tablet site-nav__link">Вязание на заказ</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__list user-nav">
+        <li class="user-nav__item user-nav__item--search">
+          <a class="navigation__link navigation__link--search user-nav__link" href="#">
+            <svg class="navigation__svg navigation__svg--search" version="1.1" id="search"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6"
+              xml:space="preserve">
+              <path fill="#231F20"
+                d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z" />
+            </svg>
+            Поиск по сайту</a>
+        </li>
+        <li class="user-nav__item user-nav__item--cart">
+          <a class="navigation__link navigation__link--cart user-nav__link" href="#">
+            <svg class="navigation__svg" version="1.1" id="cart" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px"
+              viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849"
+              xml:space="preserve">
+              <path fill="#231F20"
+                d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z" />
+            </svg>
+            Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="navigation__list stock-nav">
+        <li class="stock-nav__item">
+          <a class="navigation__link navigation__link--stock stock-nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="stock-nav__item">
+          <a class="navigation__link navigation__link--stock stock-nav__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <p class="navigation__text">Бесплатная доставка по России</p>
     </nav>
   </header>
 
@@ -55,9 +93,10 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order__fieldset fieldset">
+        <fieldset class="order__fieldset fieldset fieldset__color">
           <legend class="legend">Цвет</legend>
-          <ul class="fieldset__list">
+          <ul class="fieldset__list fieldset__list--tablet">
+
             <li class="fieldset__item">
               <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-white" checked>
               <label class="fieldset__label" for="filter-white">Белый</label>
@@ -70,6 +109,7 @@
               <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-tiffany">
               <label class="fieldset__label" for="filter-tiffany">«Тиффани»</label>
             </li>
+
             <li class="fieldset__item">
               <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-black">
               <label class="fieldset__label" for="filter-black">Черный</label>
@@ -82,21 +122,22 @@
               <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-orange">
               <label class="fieldset__label" for="filter-orange">Оранжевый</label>
             </li>
+
           </ul>
         </fieldset>
 
         <fieldset class="order__fieldset fieldset">
           <legend class="legend">ФИО</legend>
           <ul class="fieldset__list">
-            <li class="fieldset__item">
+            <li class="fieldset__item fieldset__item--tablet">
               <label class="fieldset__label fieldset__label--text" for="name">Имя:</label>
               <input class="input-text" type="text" name="your-name" id="name" placeholder="Введите Ваше имя*">
             </li>
-            <li class="fieldset__item">
+            <li class="fieldset__item fieldset__item--tablet">
               <label class="fieldset__label fieldset__label--text" for="surname">Фамилия:</label>
               <input class="input-text" type="text" name="your-surname" id="surname" placeholder="Укажите фамилию*">
             </li>
-            <li class="fieldset__item">
+            <li class="fieldset__item fieldset__item--tablet">
               <label class="fieldset__label fieldset__label--text" for="patronymic">Отчество:</label>
               <input class="input-text" type="text" name="your-patronymic" id="patronymic"
                 placeholder="Отчество, если желаете">
@@ -104,28 +145,36 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order__fieldset fieldset fieldset--text">
+        <fieldset class="order__fieldset fieldset fieldset--text fieldset__color">
           <legend class="legend">Тел</legend>
-          <label class="visually-hidden" for="phone">Тел</label>
-          <input class="input-text input-text--icon" type="tel" required="" name="your-phone" id="phone"
-            pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="+7 XXX XX XX*">
+          <div class="order__fieldset-wrapper">
+            <label class="visually-hidden" for="phone">Тел</label>
+            <input class="input-text input-text--icon" type="tel" required="" name="your-phone" id="phone"
+              pattern="\+7\s?\d{3}\s?\d{3}\s?\d{2}\s?\d{2}" placeholder="+7 XXX XX XX*">
+          </div>
         </fieldset>
 
-        <fieldset class="order__fieldset fieldset fieldset--text">
+        <fieldset class="order__fieldset fieldset fieldset--text fieldset__color">
           <legend class="legend">E-mail</legend>
-          <label class="visually-hidden" for="email-fild">E-mail</label>
-          <input class="input-text input-text--icon" type="email" required="" name="your-email" id="email-fild"
-            placeholder="Ваш Email*">
+          <div class="order__fieldset-wrapper">
+            <label class="visually-hidden" for="email-fild">E-mail</label>
+            <input class="input-text input-text--icon" type="email" required="" name="your-email" id="email-fild"
+              placeholder="Ваш Email*">
+          </div>
         </fieldset>
 
         <fieldset class="order__fieldset fieldset">
           <legend class="legend">доп</legend>
-          <label class="visually-hidden" for="message">доп</label>
-          <textarea class="input-textarea" name="your-message" id="message"
-            placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <div class="order__fieldset-wrapper">
+            <label class="visually-hidden" for="message">доп</label>
+            <textarea class="input-textarea" name="your-message" id="message"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
         </fieldset>
-        <span class="order__required"><sup>*</sup>Поля обязательны для заполнения</span>
-        <button class="order__button button" type="submit">Отправить заказ</button>
+        <div class="order__wrapper-buttom">
+          <span class="order__required"><sup>*</sup>Поля обязательны для заполнения</span>
+          <button class="order__button button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
 
@@ -133,6 +182,9 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer-logo__image" src="img/logo-footer.svg" alt="Логотип интернет-магазина «Мишка»">
+      </a>
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Инстанграмм</a>
@@ -145,9 +197,9 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
+        <b class="copyright__text">Разработано</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          <svg version="1.1" id="academy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09"
             enable-background="new 0 0 26.943 34.09" xml:space="preserve">
             <path
