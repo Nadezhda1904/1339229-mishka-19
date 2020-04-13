@@ -1,22 +1,25 @@
 .page-footer {
+  width: auto;
   background-color: @bg-color-footer;
 }
 
 .page-footer__wrapper {
   margin: 0 auto;
-  /*padding-left: 30px;
-  padding-right: 30px;*/
   min-height: 160px;
-  width: 260px;
-
 
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 28px 0;
 
+    width: 87%;
+    max-width: 1000px;
     min-height: 143px;
-    min-width: 668px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 91%;
+    max-width: 1150px;
   }
 }
 
@@ -27,5 +30,19 @@
     display: block;
     margin-right: 100px;
     padding: 30px 0;
+
+    &:focus,
+    &:hover {
+      path {
+        fill: @green-secondary--hover;
+      }
+    }
+
+    &:active {
+      path {
+        fill: @green-secondary--hover;
+        opacity: 0.3;
+      }
+    }
   }
 }

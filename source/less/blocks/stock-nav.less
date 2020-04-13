@@ -20,7 +20,29 @@
   }
 }
 
+.stock-nav a[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .stock-nav__link {
-  text-decoration: none;
+  display: block;
+  position: relative;
+  padding: 27px 27px 27px 76px;
+  width: 100%;
+
   color: @black;
+  text-decoration: none;
+
+  border-bottom: 1px solid @bg-color-separate;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }

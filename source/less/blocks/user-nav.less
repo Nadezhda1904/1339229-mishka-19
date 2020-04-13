@@ -1,4 +1,5 @@
 .user-nav {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -10,6 +11,7 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     order: 2;
+    margin-left: 200px;
 
     width: 348px;
 
@@ -18,6 +20,21 @@
 
   @media (min-width: @desktop-width) {
     order: 3;
+    margin: 0;
+  }
+}
+
+.user-nav__svg {
+  position: absolute;
+  top: 30px;
+  left: 37px;
+
+  opacity: 0.2;
+
+  @media (min-width: @tablet-width) {
+    &--search {
+      left: 40%;
+    }
   }
 }
 
@@ -25,22 +42,71 @@
   display: block;
   position: relative;
 
+  border-bottom: 1px solid @bg-color-separate;
 
-  /*padding-top: 22px;
-  padding-bottom: 22px;
+  &:hover a,
+  &:focus a {
+    opacity: 0.6;
+  }
 
-  min-width: 320px;
-  height: 79px;
+  &:focus .user-nav__svg,
+  &:hover .user-nav__svg {
+    path {
+      fill: @green-primary;
+    }
 
-  border-bottom: 1px solid @bg-color-separate;*/
+    opacity: 1;
+  }
+
+  &:active a {
+    opacity: 0.3;
+
+    path {
+      fill: @green-primary;
+    }
+  }
+
+  &:active .user-nav__svg {
+    opacity: 0.3;
+
+    path {
+      fill: @green-primary;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    &--search {
+      border: none;
+      border-left: 1px solid @bg-color-separate;
+    }
+
+    &--cart {
+      border: none;
+      border-left: 1px solid @bg-color-separate;
+    }
+  }
 }
 
 .user-nav__link {
+  display: block;
+  position: relative;
+  padding: 27px 27px 27px 76px;
+  width: 100%;
+
   color: @black;
   text-decoration: none;
 
-  /*@media (min-width: @tablet-width) {
-    border: none;
-    padding: 0;
-  }*/
+  @media (min-width: @tablet-width) {
+    &--search {
+      padding: 33px 0;
+      width: 80px;
+
+      font-size: 0;
+      text-align: center;
+    }
+
+    &--cart {
+      padding: 33px 0 33px 83px;
+    }
+  }
 }

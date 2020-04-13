@@ -68,9 +68,18 @@
 
   text-align: center;
 
-  border: 2px solid @bg-color-separate;
+  border: 2px solid rgba(68, 68, 68, 0.1);
 
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border: 2px solid@green-primary;
+  }
 
   @media (min-width: @tablet-width) {
     width: 112px;
@@ -97,6 +106,16 @@
   border: none;
 
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: @green-primary;
+    border: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 350px;
