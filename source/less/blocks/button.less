@@ -11,9 +11,20 @@
   color: @font-color-button;
   text-align: center;
 
-  border: 1px solid @border-color-button;
+  border: 2px solid @border-color-button;
 
   text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: @white;
+
+    background-color: @gray-primary;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     width: 292px;

@@ -1,29 +1,31 @@
 .products {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: auto;
+  margin: 0 auto;
 }
 
 .products__list {
   margin: 0 auto;
   padding: 0;
-  width: 260px;
+  width: 82%;
 
   list-style: none;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    width: 669px;
+    width: 87%;
+    max-width: 1000px;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width: 1050px;
+    width: 91%;
+    max-width: 1150px;
   }
 }
 
 .products__item {
   margin-top: 30px;
+  width: 100%;
 }

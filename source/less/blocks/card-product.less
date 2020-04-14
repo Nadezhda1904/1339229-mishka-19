@@ -1,5 +1,5 @@
 .card-product {
-  width: 260px;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -13,22 +13,33 @@
     display: flex;
     flex-direction: column;
 
-    width: auto;
+    width: 315px;
     min-height: 660px;
   }
 }
 
-.card-product__image {
+.card-product__image-wrapper {
   width: 100%;
-  height: 195px;
+  height: auto;
 
   @media (min-width: @tablet-width) {
-    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
     height: 334px;
   }
 
   @media (min-width: @desktop-width) {
     height: 462px;
+  }
+}
+
+.card-product__image {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    min-height: 334px;
   }
 }
 
@@ -47,6 +58,15 @@
   font-weight: 700;
   color: @font-color-heading;
 
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
   }
@@ -62,7 +82,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 335px;
+    width: 95%;
   }
 
   @media (min-width: @desktop-width) {
@@ -125,14 +145,23 @@
   height: 21px;
   padding: 0;
 
-  background-color: transparent;
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: auto;
-  border: none;
-
   opacity: 0.2;
 
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    path {
+      fill: @green-primary;
+    }
+    opacity: 1;
+  }
+
+  &:active {
+    path {
+      fill: @green-primary;
+    }
+
+    opacity: 0.3;
+  }
 }

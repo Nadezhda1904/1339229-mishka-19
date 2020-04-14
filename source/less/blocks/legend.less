@@ -7,13 +7,21 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 0;
 
     font-size: 17px;
+
+    &--phone {
+      top: 17px;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 50px 60px;
+    left: 60px;
+
+    &--phone {
+      top: 17px;
+    }
   }
 }

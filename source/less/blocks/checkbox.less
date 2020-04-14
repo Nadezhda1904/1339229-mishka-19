@@ -17,13 +17,10 @@
     width: 54px;
     height: 54px;
   }
-
-  @media (min-width: @desktop-width) {
-    /*left: 167px;*/
-  }
 }
 
-.checkbox:checked + .fieldset__label::after {
+.checkbox:checked + .fieldset__label::after,
+.checkbox:active + .fieldset__label::after {
   content: "";
   position: absolute;
   left: 8px;
@@ -37,12 +34,17 @@
   background-size: 23px 17px;
 
   @media (min-width: @tablet-width) {
-    /*left: 50%;*/
 
     background-size: 32px 22px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    /*left: 60%;*/
-  }
+.fieldset__label:focus::before,
+.fieldset__label:hover::before {
+  border: 2px solid @green-primary;
+}
+
+.fieldset__label:active::before {
+  border: 2px solid @font-color-base;
+  opacity: 0.3;
 }

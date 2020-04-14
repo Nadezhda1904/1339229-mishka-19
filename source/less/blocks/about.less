@@ -3,25 +3,6 @@
   margin: 0 auto;
   padding: 0;
   min-width: 320px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    height: 7px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
-    background-size: contain;
-    background-repeat: repeat-x;
-  }
-
-  @media (min-width: @tablet-width) {
-    &::before {
-      top: 50px;
-      height: 17px;
-    }
-  }
 }
 
 .about__wrapper {

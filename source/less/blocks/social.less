@@ -21,6 +21,21 @@
   &:not(:last-child) {
     margin-right: 41px;
   }
+
+
+  &:focus,
+  &:hover {
+    path {
+      fill: @green-secondary--hover;
+    }
+  }
+
+  &:active {
+    path {
+      fill: @green-secondary--hover;
+      opacity: 0.3;
+    }
+  }
 }
 
 .social__link {
@@ -31,15 +46,17 @@
 
   text-decoration: none;
 
-  &--instagram::after {
-    content: url("../img/icon-insta.svg");
+  &:focus,
+  &:hover {
+    path {
+      fill: @green-secondary--hover;
+    }
   }
 
-  &--facebook::after {
-    content: url("../img/icon-fb.svg");
-  }
-
-  &--twitter::after {
-    content: url("../img/icon-twitter.svg");
+  &:active {
+    path {
+      fill: @green-secondary--hover;
+      opacity: 0.3;
+    }
   }
 }
