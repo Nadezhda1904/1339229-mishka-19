@@ -12,6 +12,10 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -23,7 +27,7 @@
 .comments__wrapper {
   position: relative;
   margin: 0 auto;
-  width: 70%;
+  width: 82%;
 
   &::after {
     content: "";
@@ -50,7 +54,7 @@
 
   @media (min-width: @desktop-width) {
     padding-left: 150px;
-    width: 1050px;
+    width: 91%;
     max-width: 1150px;
     min-height: 457px;
 
@@ -60,7 +64,7 @@
 
     &::after {
       bottom: -90px;
-      height: 17px;
+      height: 23px;
     }
   }
 }
@@ -87,7 +91,6 @@
     font-size: 53px;
     line-height: 57px;
   }
-
 }
 
 .comments__list {
