@@ -116,8 +116,14 @@
 
   &--interior:focus,
   &--interior:hover {
-    padding-top: 35px;
+    /*padding-top: 35px;*/
     min-width: 108px;
+  }
+
+  &--interior:focus .content__link,
+  &--interior:hover .content__link {
+    padding-top: 35px;
+
   }
 
   &--toys:focus,
@@ -173,7 +179,7 @@
 
   color: @white;
 
-  &--interior:focus,
+  /*&--interior:focus,
   &--interior:hover {
     padding-top: 35px;
     min-width: 108px;
@@ -183,5 +189,5 @@
   &--toys:hover {
     padding-top: 35px;
     min-width: 108px;
-  }
+  }*/
 }

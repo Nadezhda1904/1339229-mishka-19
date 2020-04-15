@@ -17,7 +17,7 @@
 
 .product-week__wrapper {
   position: relative;
-  width: 70%;
+  width: 82%;
   margin: 0 auto;
 
 
@@ -113,6 +113,7 @@
 
 .product-week__wrapper-content {
   @media (min-width: @tablet-width) {
+    position: relative;
     display: flex;
     justify-content: space-between;
   }
@@ -132,6 +133,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 32%;
     min-height: 461px;
   }
 }
@@ -170,7 +172,12 @@
 }
 
 .product-week__image {
+  width: 100%;
+
   @media (min-width: @tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 404px;
     width: auto;
   }
@@ -180,4 +187,9 @@
     width: auto;
     height: 636px;
   }
+}
+
+.week-goods__image {
+  width: 100%;
+  height: auto;
 }
