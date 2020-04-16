@@ -1,21 +1,28 @@
 .fieldset {
   position: relative;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 20px 0 0;
   width: 82%;
   min-height: 143px;
 
   border: none;
 
-  @media (min-width: @tablet-width) {
-    margin: 0 auto;
-    width: 87%;
-    max-width: 1000px;
+  &--color {
+    padding: 26px 0 0;
+
+    @media (min-width: @tablet-width) {
+      width: 1050px;
+    }
   }
 
   &--text {
     padding-top: 0;
     min-height: 105px;
+
+    @media (min-width: @tablet-width) {
+      padding: 24px 0;
+      min-height: 52px;
+    }
   }
 
   &::before {
@@ -24,7 +31,7 @@
     top: 6px;
     left: 62px;
     right: 0;
-    height: 1px;
+    height: 2px;
     background-color: #62d1ba;
 
     @media (min-width: @tablet-width) {
@@ -34,6 +41,29 @@
     @media (min-width: @desktop-width) {
       height: 0;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 87%;
+    max-width: 1000px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    max-width: 1150px;
+
+    &--color {
+      padding-left: 175px;
+      width: 1050px;
+    }
+  }
+}
+
+.fieldset__wrapper {
+  @media (min-width: @tablet-width) {
+    padding: 26px 0;
+    min-height: 228px;
+    background-color: @gray-secondary;
   }
 }
 
@@ -46,28 +76,38 @@
   @media (min-width: @tablet-width) {
     margin-left: 167px;
 
-    &--tablet {
+    &--color {
       display: flex;
       flex-wrap: wrap;
       margin-left: 167px;
-      min-height: 304px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    &--tablet {
-      min-height: 228px;
+    &--color {
+      justify-content: space-between;
+      /*min-height: 228px;*/
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
 .fieldset__item {
+  height: 40px;
   margin-bottom: 25px;
 
+  &--text {
+    height: auto;
+  }
+
   @media (min-width: @tablet-width) {
+    height: 52px;
     min-width: 220px;
 
-    &--tablet {
+    &--text {
       display: flex;
       justify-content: space-between;
     }
@@ -81,10 +121,10 @@
 .fieldset__label {
   position: relative;
   display: block;
-  padding: 20px 0 20px 65px;
+  padding: 10px 0 20px 62px;
   min-height: 40px;
 
-  font-size: 13px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 18px;
 
@@ -102,15 +142,5 @@
     &--text {
       padding: 15px 5px 5px 0;
     }
-  }
-}
-
-.fieldset__color {
-  @media (min-width: @tablet-width) {
-    background-color: @gray-secondary;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: @gray-secondary;
   }
 }

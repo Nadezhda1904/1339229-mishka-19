@@ -7,14 +7,22 @@
 
 .about__wrapper {
   margin: 0 auto;
-  width: 260px;
+  width: 82%;
   padding-top: 50px;
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
     padding: 131px 0 89px 0;
 
-    width: 668px;
+    width: 87%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 131px 0 89px 150px;
+
+    width: 91%;
+    max-width: 1150px;
   }
 }
 
@@ -35,9 +43,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    padding: 0;
-    width: 668px;
   }
 }
 
