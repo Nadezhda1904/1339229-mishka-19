@@ -23,7 +23,8 @@
     margin: 0 auto;
     margin-bottom: -49px;
 
-    width: 87%;/*668/768=~87%*/
+    width: 87%;
+    /*668/768=~87%*/
     max-width: 1000px;
     min-height: 89px;
   }
@@ -111,7 +112,6 @@
 
 .navigation__logo {
   padding: 19px 0 19px 37%;
-
   align-self: center;
 
   @media (min-width: @tablet-width) {
@@ -120,6 +120,47 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+  }
+}
+
+.navigation__logo svg {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+    height: 46px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.navigation__logo-mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.navigation__logo-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.navigation__logo-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
   }
 }
 

@@ -8,20 +8,24 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     order: 3;
     padding-top: 22px;
+    scroll-padding-right: 15px;
 
-    width: 334px;
+    width: 300px;
 
-    font-size: 17px;
+    font-size: 15px;
 
     z-index: 1;
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: flex-start;
     padding: 0;
     order: 1;
     z-index: 1;
+    width: 400px;
   }
 }
 
@@ -48,7 +52,7 @@
 
     &--order {
       padding-left: 50px;
-      min-width: 245px;
+      width: 220px;
     }
   }
 }

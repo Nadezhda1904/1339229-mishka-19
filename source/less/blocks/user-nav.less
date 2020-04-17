@@ -29,9 +29,13 @@
   top: 30px;
   left: 37px;
 
+  fill: @black;
+
   opacity: 0.2;
 
   @media (min-width: @tablet-width) {
+    top: 35px;
+
     &--search {
       left: 40%;
     }
@@ -51,27 +55,19 @@
 
   &:focus .user-nav__svg,
   &:hover .user-nav__svg {
-    path {
-      fill: @green-primary;
-    }
+    fill: @green-primary;
 
     opacity: 1;
   }
 
   &:active a {
     opacity: 0.3;
-
-    path {
-      fill: @green-primary;
-    }
+    fill: @green-primary;
   }
 
   &:active .user-nav__svg {
     opacity: 0.3;
-
-    path {
-      fill: @green-primary;
-    }
+    fill: @green-primary;
   }
 
   @media (min-width: @tablet-width) {
