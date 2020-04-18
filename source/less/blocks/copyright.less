@@ -15,20 +15,18 @@
   text-decoration: none;
   fill: @green-primary;
 
-  &:focus,
-  &:hover {
-    path {
-      fill: @green-secondary--hover;
-    }
+  &:focus .copyright__svg,
+  &:hover .copyright__svg {
+    fill: @green-secondary--hover;
   }
 
   &:active {
     opacity: 0.3;
+  }
 
-    path {
-      fill: @green-secondary--hover;
-      opacity: 0.3;
-    }
+  &:active .copyright__svg {
+    fill: @green-secondary--hover;
+    opacity: 0.3;
   }
 }
 

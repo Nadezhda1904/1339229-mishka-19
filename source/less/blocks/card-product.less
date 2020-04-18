@@ -141,7 +141,7 @@
   }
 }
 
-.card-product__basket {
+.card-product__basket svg {
   margin-left: auto;
   width: 21px;
   height: 21px;
@@ -150,20 +150,20 @@
   opacity: 0.2;
 
   cursor: pointer;
+}
 
-  &:focus,
-  &:hover {
-    path {
-      fill: @green-primary;
-    }
-    opacity: 1;
-  }
+.card-product__basket:focus .card-product__basket-svg,
+.card-product__basket:hover .card-product__basket-svg {
 
-  &:active {
-    path {
-      fill: @green-primary;
-    }
+  fill: @green-primary;
 
-    opacity: 0.3;
-  }
+  opacity: 1;
+}
+
+.card-product__basket:active .card-product__basket-svg {
+
+  fill: @green-primary;
+
+
+  opacity: 0.3;
 }

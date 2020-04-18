@@ -22,41 +22,13 @@
     margin-right: 41px;
   }
 
-
-  &:focus,
-  &:hover {
-    path {
-      fill: @green-secondary--hover;
-    }
+  &:focus .social__svg,
+  &:hover .social__svg {
+    fill: @green-secondary--hover;
   }
 
-  &:active {
-    path {
-      fill: @green-secondary--hover;
-      opacity: 0.3;
-    }
-  }
-}
-
-.social__link {
-  position: relative;
-
-  font-size: 0;
-  line-height: 0;
-
-  text-decoration: none;
-
-  &:focus,
-  &:hover {
-    path {
-      fill: @green-secondary--hover;
-    }
-  }
-
-  &:active {
-    path {
-      fill: @green-secondary--hover;
-      opacity: 0.3;
-    }
+  &:active .social__svg {
+    fill: @green-secondary--hover;
+    opacity: 0.3;
   }
 }
