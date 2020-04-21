@@ -1,27 +1,48 @@
 .fieldset {
   position: relative;
   margin: 0 auto;
-  padding: 20px 0 0;
+  padding: 20px 0 0 0;
   width: 82%;
   min-height: 143px;
 
   border: none;
 
   &--color {
-    padding: 26px 0 0;
-
-    @media (min-width: @tablet-width) {
-      width: 1050px;
-    }
+    padding: 20px 0 0;
   }
 
   &--text {
-    padding-top: 0;
+    padding-top: 7px;
     min-height: 105px;
+  }
 
-    @media (min-width: @tablet-width) {
-      padding: 24px 0;
+  @media (min-width: @tablet-width) {
+    padding: 35px 0 0 0;
+    width: 87%;
+    max-width: 1000px;
+
+    &--color {
+      padding: 23px 0 0;
+    }
+
+    &--text {
+      padding-top: 24px;
       min-height: 52px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 0 0 0;
+    width: 700px;
+    max-width: 1150px;
+
+    &--color {
+      padding-left: 175px;
+      width: 1050px;
+    }
+
+    &--text {
+      padding-top: 20px;
     }
   }
 
@@ -42,25 +63,13 @@
       height: 0;
     }
   }
-
-  @media (min-width: @tablet-width) {
-    width: 87%;
-    max-width: 1000px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 700px;
-    max-width: 1150px;
-
-    &--color {
-      padding-left: 175px;
-      width: 1050px;
-    }
-  }
 }
 
 .fieldset__wrapper {
+  margin-top: 12px;
+
   @media (min-width: @tablet-width) {
+    margin-top: 30px;
     padding: 26px 0;
     min-height: 228px;
     background-color: @gray-secondary;
@@ -79,42 +88,44 @@
     &--color {
       display: flex;
       flex-wrap: wrap;
-      margin-left: 167px;
     }
   }
 
   @media (min-width: @desktop-width) {
     &--color {
       justify-content: space-between;
-      /*min-height: 228px;*/
     }
   }
 
   @media (min-width: @desktop-width) {
+    justify-content: flex-start;
     margin-left: 0;
   }
 }
 
 .fieldset__item {
   height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   &--text {
     height: auto;
   }
 
   @media (min-width: @tablet-width) {
+    margin-right: 45px;
     height: 52px;
     min-width: 220px;
 
     &--text {
       display: flex;
       justify-content: space-between;
+      margin-top: 23px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    min-width: 240px;
+    margin-right: 0;
+    min-width: 260px;
   }
 }
 
@@ -122,7 +133,6 @@
   position: relative;
   display: block;
   padding: 10px 0 20px 62px;
-  min-height: 40px;
 
   font-size: 17px;
   font-weight: 700;
@@ -135,6 +145,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding: 10px 0 20px 82px;
     min-height: 54px;
 
     font-size: 19px;
