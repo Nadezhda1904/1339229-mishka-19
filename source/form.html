@@ -5,7 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
+  <script>
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 
 <body class="body">
@@ -68,7 +75,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Страница заказа</h1>
     <section class="content content--inner-page">
-      <h2 class="content__title">Вязание на заказ</h2>
+      <h2 class="content__title content__title--inner">Вязание на заказ</h2>
     </section>
 
     <section class="order order-wrapper">
