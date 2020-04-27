@@ -1,8 +1,45 @@
 .slider {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.slider__list {
+  width: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 642px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}
+
+.slider__item {
+  display: none;
+  width: 100%;
+
+
+  @media (min-width: @tablet-width) {
+    width: 642px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 768px;
+  }
+}
+
+.slider__item--show {
+  display: block;
+}
+
+
+.slider--nojs .slider__item:nth-child(1) {
+  display: block;
 }
 
 .slider__buttons {

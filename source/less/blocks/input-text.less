@@ -12,6 +12,10 @@
 
   outline: none;
 
+  & + svg {
+    color: @gray-primary;
+  }
+
   &::placeholder {
     opacity: 0.3;
   }
@@ -23,11 +27,12 @@
 
   &:focus + svg,
   &:hover + svg {
-    path {
-      fill: @border-color-input--hover;
-    }
-
+    fill: @border-color-input--hover;
     opacity: 1;
+  }
+
+  &:active {
+    color: @gray-primary;
   }
 
   @media (min-width: @tablet-width) {
