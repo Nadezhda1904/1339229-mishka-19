@@ -85,53 +85,53 @@
       </p>
       <form class="order__form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="order__fieldset fieldset">
-          <legend class="legend">Тип</legend>
+          <legend class="legend legend--type">Тип</legend>
           <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <input class="visually-hidden radio" type="radio" name="type" value="accessory" id="filter-have"
+            <li class="fieldset__item radio">
+              <input class="visually-hidden radio__input" type="radio" name="type" value="accessory" id="filter-have"
                 checked="">
-              <label class="fieldset__label" for="filter-have">Аксессуар для интерьера</label>
+              <label class="fieldset__label radio__label" for="filter-have">Аксессуар для интерьера</label>
             </li>
-            <li class="fieldset__item">
-              <input class="visually-hidden radio" type="radio" name="type" value="toy" id="filter-no-have">
-              <label class="fieldset__label" for="filter-no-have">Детская игрушка</label>
+            <li class="fieldset__item radio">
+              <input class="visually-hidden radio__input" type="radio" name="type" value="toy" id="filter-no-have">
+              <label class="fieldset__label radio__label" for="filter-no-have">Детская игрушка</label>
             </li>
           </ul>
         </fieldset>
-        <div class="fieldset__wrapper">
+        <div class="fieldset-wrapper">
           <fieldset class="order__fieldset fieldset fieldset--color">
             <legend class="legend legend--color">Цвет</legend>
             <ul class="fieldset__list fieldset__list--color">
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-white" checked="">
-                <label class="fieldset__label" for="filter-white">Белый</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-white" checked="">
+                <label class="fieldset__label checkbox__label" for="filter-white">Белый</label>
               </li>
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-grey" checked="">
-                <label class="fieldset__label" for="filter-grey">Серый</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-grey" checked="">
+                <label class="fieldset__label checkbox__label" for="filter-grey">Серый</label>
               </li>
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-tiffany">
-                <label class="fieldset__label" for="filter-tiffany">«Тиффани»</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-tiffany">
+                <label class="fieldset__label checkbox__label" for="filter-tiffany">«Тиффани»</label>
               </li>
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-black">
-                <label class="fieldset__label" for="filter-black">Черный</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-black">
+                <label class="fieldset__label checkbox__label" for="filter-black">Черный</label>
               </li>
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-pink">
-                <label class="fieldset__label" for="filter-pink">Розовый</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-pink">
+                <label class="fieldset__label checkbox__label" for="filter-pink">Розовый</label>
               </li>
-              <li class="fieldset__item">
-                <input class="visually-hidden checkbox" type="checkbox" name="black" id="filter-orange">
-                <label class="fieldset__label" for="filter-orange">Оранжевый</label>
+              <li class="fieldset__item checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="black" id="filter-orange">
+                <label class="fieldset__label checkbox__label" for="filter-orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
         </div>
 
-        <fieldset class="order__fieldset fieldset">
-          <legend class="legend">ФИО</legend>
+        <fieldset class="order__fieldset fieldset fieldset--name">
+          <legend class="legend legend--name">ФИО</legend>
           <ul class="fieldset__list">
             <li class="fieldset__item fieldset__item--text">
               <label class="fieldset__label fieldset__label--text" for="name">Имя:</label>
@@ -151,9 +151,9 @@
           </ul>
         </fieldset>
 
-        <div class="fieldset__wrapper">
+        <div class="fieldset-wrapper fieldset-wrapper--phone">
 
-          <fieldset class="order__fieldset fieldset fieldset--text">
+          <fieldset class="order__fieldset fieldset fieldset--phone">
             <legend class="legend legend--phone">Тел</legend>
             <div class="order__fieldset-wrapper">
               <label class="visually-hidden" for="phone">Тел</label>
@@ -166,7 +166,7 @@
           </fieldset>
 
           <fieldset class="order__fieldset fieldset fieldset--text">
-            <legend class="legend legend--phone">E-mail</legend>
+            <legend class="legend legend--mail">E-mail</legend>
             <div class="order__fieldset-wrapper">
               <label class="visually-hidden" for="email-fild">E-mail</label>
               <input class="input-text input-text--icon" type="email" name="your-email" id="email-fild"
@@ -178,8 +178,8 @@
           </fieldset>
         </div>
 
-        <fieldset class="order__fieldset fieldset">
-          <legend class="legend">доп</legend>
+        <fieldset class="order__fieldset fieldset fieldset--textarea">
+          <legend class="legend legend--textarea">доп</legend>
           <div class="order__fieldset-wrapper">
             <label class="visually-hidden" for="message">доп</label>
             <textarea class="input-textarea" name="your-message" id="message"
@@ -198,7 +198,7 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo" href="index.html" aria-label="Логотип интернет-магазина «Мишка»">
+      <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип интернет-магазина «Мишка»">
         <svg width="102" height="34">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
@@ -241,6 +241,7 @@
   </footer>
 
   <script src="js/toggle.min.js"></script>
+
 </body>
 
 </html>

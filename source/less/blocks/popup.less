@@ -59,6 +59,13 @@
   color: @black;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    width: 80%;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .popup__paragraph {
@@ -69,6 +76,10 @@
   color: @black;
   text-align: center;
   font-style: normal;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .popup__form-wrapper {

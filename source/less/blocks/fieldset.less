@@ -8,10 +8,20 @@
   border: none;
 
   &--color {
-    padding: 20px 0 0;
+    position: relative;
+    padding: 26px 0 0;
+  }
+
+  &--name {
+    padding: 26px 0 0;
   }
 
   &--text {
+    padding-top: 7px;
+    min-height: 105px;
+  }
+
+  &--phone {
     padding-top: 7px;
     min-height: 105px;
   }
@@ -26,13 +36,18 @@
     }
 
     &--text {
-      padding-top: 24px;
+      padding-top: 0;
       min-height: 52px;
+    }
+
+    &--phone {
+      padding-top: 25px;
+      min-height: 101px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 30px 0 0 0;
+    padding: 30px 0 0;
     width: 700px;
     max-width: 1150px;
 
@@ -41,15 +56,23 @@
       width: 1050px;
     }
 
+    &--name {
+      padding: 36px 0 0;
+    }
+
     &--text {
-      padding-top: 20px;
+      padding-top: 5px;
+    }
+
+    &--textarea {
+      padding: 35px 0 0;
     }
   }
 
   &::before {
     position: absolute;
     content: "";
-    top: 6px;
+    bottom: 149px;
     left: 62px;
     right: 0;
     height: 1px;
@@ -63,16 +86,25 @@
       height: 0;
     }
   }
-}
 
-.fieldset__wrapper {
-  margin-top: 12px;
+  &--color::before {
+    bottom: 397px;
+  }
 
-  @media (min-width: @tablet-width) {
-    margin-top: 30px;
-    padding: 26px 0;
-    min-height: 228px;
-    background-color: @gray-secondary;
+  &--name::before {
+    bottom: 308px;
+  }
+
+  &--phone::before {
+    top: 10px;
+  }
+
+  &--text::before {
+    top: 12px;
+  }
+
+  &--textarea::before {
+    bottom: 179px;
   }
 }
 
@@ -105,14 +137,14 @@
 
 .fieldset__item {
   height: 40px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   &--text {
+    margin-bottom: 19px;
     height: auto;
   }
 
   @media (min-width: @tablet-width) {
-    /*margin-right: 45px;*/
     height: 52px;
     min-width: 240px;
 
@@ -125,7 +157,12 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 0;
-    min-width: 260px;
+    min-width: 262px;
+
+    &--text {
+      margin-top: 15px;
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -142,16 +179,23 @@
 
   &--text {
     padding: 0;
+    padding-top: 5px;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 10px 0 20px 82px;
+    padding: 18px 0 20px 82px;
     min-height: 54px;
 
     font-size: 19px;
 
     &--text {
-      padding: 15px 5px 5px 0;
+      padding: 8px 5px 5px 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--text {
+      padding: 14px 2px 5px 3px;
     }
   }
 }

@@ -7,9 +7,8 @@
   @media (min-width: @desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     order: 4;
-    padding-top: 22px;
+    padding-top: 15px;
     z-index: 1;
 
     width: 334px;
@@ -28,6 +27,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.stock-nav__item:nth-child(2n) {
+  padding-left: 60px;
 }
 
 .stock-nav__link {

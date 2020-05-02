@@ -12,11 +12,16 @@
 
   @media (min-width: @tablet-width) {
     border: none;
+    padding: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 33px 18px 33px 25px;
   }
 }
 
 .social__item {
-  height: 28px;
+  /*height: 28px;*/
 
   &:not(:last-child) {
     margin-right: 41px;
@@ -31,4 +36,8 @@
     fill: @green-secondary--hover;
     opacity: 0.3;
   }
+}
+
+.social__link {
+  display: block;
 }

@@ -1,4 +1,4 @@
-.radio + .fieldset__label::before {
+.radio__input + .radio__label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -16,12 +16,12 @@
   }
 }
 
-.radio:checked + .fieldset__label::after,
-.radio:active + .fieldset__label::after {
+.radio__input:checked + .radio__label::after,
+.radio__input:active + .radio__label::after {
   content: "";
   position: absolute;
   left: 12px;
-  top: 20%;
+  top: 12px;
 
   width: 16px;
   height: 16px;
@@ -37,12 +37,17 @@
   }
 }
 
-.fieldset__label:focus::before,
-.fieldset__label:hover::before {
+
+.radio__label:focus::before,
+.radio__label:hover::before {
   border: 2px solid @green-primary;
 }
 
-.fieldset__label:active::before {
+.radio__label:active::before {
   border: 2px solid @font-color-base;
   opacity: 0.3;
+}
+
+input:focus ~ .radio__label::before {
+  outline: 3px solid #bbd7f1;
 }

@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  padding: 28px 0 35px;
   margin: 0 auto;
   width: auto;
 
@@ -16,6 +16,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
     background-repeat: repeat-x;
+    transform: rotate(180deg);
   }
 
   @media (min-width: @tablet-width) {
@@ -24,18 +25,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0;
+    padding: 35px 0 30px;
 
     &::after {
-      top: 105%;
+      top: 103%;
       height: 17px;
     }
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 80px;
+    padding: 30px 0;
 
     &::after {
-      height: 0;
+      display: none;
     }
   }
 }
@@ -65,6 +68,7 @@
       background-image: url("../img/bg-zigzag-line.svg");
       background-size: contain;
       background-repeat: repeat-x;
+      transform: rotate(180deg);
     }
   }
 }
@@ -72,9 +76,14 @@
 .product-week__wrapper-head {
   @media (min-width: @tablet-width) {
     display: flex;
-    padding-top: 17px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 45px;
     width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 45px;
   }
 }
 
@@ -90,24 +99,24 @@
   @media (min-width: @tablet-width) {
     display: block;
     margin-left: auto;
-    padding-right: 26px;
+    padding: 10px 26px 2px 0;
     width: 100px;
 
-    line-height: 20px;
+    line-height: 17px;
     text-align: center;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0;
-    margin-left: 47px;
-    padding-top: 10px;
+    margin-left: 45px;
+    padding-top: 15px;
     order: 1;
   }
 }
 
 .product-week__title {
   margin: 0;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 
   font-size: 25px;
   font-weight: 700;
@@ -148,13 +157,10 @@
     margin-right: 6%;
     width: 43%;
     min-height: 404px;
-
-    font-size: 17px;
-    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 32%;
+    width: 33.5%;
     min-height: 461px;
   }
 }
@@ -165,31 +171,40 @@
   padding-bottom: 15px;
 
   @media (min-width: @tablet-width) {
-    padding: 0 5px 30px 0;
+    padding: 0 5px 35px 0;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 5px 20px 0;
+    padding: 0 10px 50px 0;
   }
 }
 
 .product-week__table {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .product-week__price {
   margin: 0;
   padding-top: 14px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 
   font-size: 17px;
   font-weight: 700;
   text-align: center;
 
-  @media (min-width: @desktop-width) {
-    padding-top: 80px;
-
+  @media (min-width: @tablet-width) {
+    padding-bottom: 35px;
     font-size: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
   }
 }
 
@@ -206,13 +221,14 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 0;
     height: 404px;
     width: auto;
   }
 
   @media (min-width: @desktop-width) {
+    top: 5px;
     margin-top: -160px;
     width: auto;
     height: 636px;

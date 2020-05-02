@@ -1,4 +1,4 @@
-var button = document.querySelectorAll(".button__order");
+var button = document.querySelectorAll(".button-order");
 var popup = document.querySelector(".popup__order");
 var overlay = document.querySelector(".popup__overlay")
 
