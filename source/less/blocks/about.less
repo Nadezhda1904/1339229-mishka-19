@@ -22,7 +22,7 @@
     padding: 127px 0 89px 170px;
 
     width: 91%;
-    max-width: 1150px;
+    max-width: 1050px;
   }
 }
 
@@ -101,22 +101,32 @@
   }
 
   &--price::before {
+    top: 32px;
+    left: 1px;
     background-image: url("../img/icon-feature-money.svg");
   }
 
   &--like::before {
+    top: 37px;
+    left: 7px;
     background-image: url("../img/icon-feature-heart.svg");
   }
 
   &--manual::before {
+    top: 35px;
+    left: 5px;
     background-image: url("../img/icon-feature-ball.svg");
   }
 
   &--support::before {
+    top: 35px;
+    left: -5px;
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
   &--gift::before {
+    top: 33px;
+    left: 1px;
     background-image: url("../img/icon-feature-gift.svg");
   }
 
@@ -126,8 +136,35 @@
     line-height: 22px;
 
     &::before {
-      top: 55px;
-      left: 6px;
+      top: 49px;
+      left: 9px;
     }
+
+    &--price::before {
+      top: 55px;
+      left: 1px;
+    }
+
+    &--like::before {
+      top: 60px;
+      left: 8px;
+    }
+
+    &--manual::before {
+      top: 50px;
+      left: 2px;
+    }
+
+    &--support::before {
+      top: 56px;
+      left: -5px;
+    }
+
+    &--gift::before {
+      top: 58px;
+      left: 3px;
+    }
+
+
   }
 }
