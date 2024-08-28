@@ -1,0 +1,79 @@
+.card__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card__button {
+  margin: 0 auto;
+  text-decoration: none;
+  display: block;
+  width: 260px;
+  padding: 0 10px;
+  padding-top: 16px;
+  padding-bottom: 19px;
+  border: 2px solid #444444;
+  color: #444444;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.card__button:active {
+  background-color: #444444;
+  color: #797979;
+}
+
+.features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feature {
+  position: relative;
+}
+
+.feature::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -5px;
+  background-repeat: no-repeat;
+}
+
+.feature--eco::before {
+  width: 32px;
+  height: 37px;
+  background-image: url("../img/icon-feature-flower.svg");
+}
+
+.feature--handmade::before {
+  width: 34px;
+  height: 34px;
+  background-image: url("../img/icon-feature-ball.svg");
+}
+
+.feature--gift::before {
+  width: 33px;
+  height: 33px;
+  background-image: url("../img/icon-feature-gift.svg");
+}
+
+.feature--like::before {
+  width: 33px;
+  height: 28px;
+  background-image: url("mishka/icon-feature-heart.svg");
+}

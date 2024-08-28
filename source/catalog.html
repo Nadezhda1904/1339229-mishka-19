@@ -104,6 +104,9 @@
                 <h3 class="card-product__title">Зайчик-попрыгайчик</h3>
               </a>
               <p class="card-product__text">Рост 30см, вес 200г</p>
+              <p><a class="card__button button-show" href="popup-details.html">Показать подробности
+                </a>
+              </p>
             </div>
             <div class="card-product__discription-wrapper">
               <p class="card-product__price">1 200 руб.</p>
@@ -142,6 +145,9 @@
                 <h3 class="card-product__title">Корзинка для белья</h3>
               </a>
               <p class="card-product__text">Диаметр 15 см, высота 10 см</p>
+              <p><a class="card__button button-show" href="popup-details.html">Показать подробности
+              </a>
+            </p>
             </div>
             <div class="card-product__discription-wrapper">
               <p class="card-product__price">690 руб.</p>
@@ -178,6 +184,9 @@
                 <h3 class="card-product__title">Большая корзинка<br> для игрушек</h3>
               </a>
               <p class="card-product__text">Диаметр 30 см, высота 30 см</p>
+              <p><a class="card__button button-show" href="popup-details.html">Показать подробности
+              </a>
+            </p>
             </div>
             <div class="card-product__discription-wrapper">
               <p class="card-product__price">1 500 руб.</p>
@@ -233,7 +242,8 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип интернет-магазина «Мишка»">
+      <a class="page-footer__logo logo" href="https://htmlacademy.ru/intensive/adaptive"
+        aria-label="Логотип интернет-магазина «Мишка»">
         <svg width="102" height="34">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
@@ -298,8 +308,30 @@
     </div>
   </section>
 
+  <section class="popup-details">
+    <div class="popup-details__content">
+      <h2 class="visually-hidden">Подробности о товаре</h2>
+      <ul class="features">
+        <li class="feature feature--eco">
+          <p>Экологически чистые материалы</p>
+        </li>
+        <li class="feature feature--handmade">
+          <p>Связано вручную с любовью и умилением</p>
+        </li>
+        <li class="feature feature--gift">
+          <p>Поставляется в подарочной упаковке</p>
+        </li>
+        <li class="feature feature--like">
+          <p>Увеличивает лайки на фотографиях</p>
+        </li>
+      </ul>
+      <button class="popup-details__button button-hide" type="button">Закрыть</button>
+    </div>
+  </section>
+
   <script src="js/toggle.min.js"></script>
   <script src="js/popup.min.js"></script>
+  <script src="js/popup-detail.min.js"></script>
 
 </body>
 
