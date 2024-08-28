@@ -49,5 +49,16 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1"
-  }
+  },
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nadezhda1904/1339229-mishka-19.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nadezhda1904/1339229-mishka-19/issues"
+  },
+  "homepage": "https://github.com/Nadezhda1904/1339229-mishka-19#readme"
 }
