@@ -12,14 +12,14 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
-    padding: 87px 0 89px 0;
+    padding: 87px 0 0 0;
 
     width: 87%;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
-    padding: 127px 0 89px 170px;
+    padding: 127px 0 0 170px;
 
     width: 91%;
     max-width: 1050px;
@@ -34,11 +34,15 @@
   color: @font-color-section-title;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 49px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 49px;
+
     font-size: 53px;
     line-height: 57px;
   }
@@ -65,6 +69,7 @@
   list-style: none;
 
   @media (min-width: @tablet-width) {
+    padding-top: 55px;
     &--right {
       margin-left: auto;
       width: 334px;
@@ -131,37 +136,39 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-top: 107px;
+    /*padding-top: 107px;*/
+    padding-top: 0;
+    margin-bottom: 111px;
     font-size: 20px;
     line-height: 22px;
 
     &::before {
-      top: 49px;
+      top: -55px;
       left: 9px;
     }
 
     &--price::before {
-      top: 55px;
+      top: -55px;
       left: 1px;
     }
 
     &--like::before {
-      top: 60px;
+      top: -50px;
       left: 8px;
     }
 
     &--manual::before {
-      top: 50px;
+      top: -55px;
       left: 2px;
     }
 
     &--support::before {
-      top: 56px;
+      top: -50px;
       left: -5px;
     }
 
     &--gift::before {
-      top: 58px;
+      top: -50px;
       left: 3px;
     }
   }
